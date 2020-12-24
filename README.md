@@ -1,6 +1,6 @@
 # Java4Me☕
 
- Meu aprendizado com **JAVA** para Faculdade.
+ Meu aprendizado de **JAVA** para Faculdade.
  
 ![java](https://github.com/FerreiraWalter/Java4Me/blob/main/Primeiros_Passos/java_logo.png)
 
