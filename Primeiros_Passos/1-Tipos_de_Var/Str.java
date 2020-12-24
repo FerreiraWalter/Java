@@ -5,6 +5,6 @@ public class Str {
         //Aspas Duplas
         System.out.println("Walter");
         System.out.println("Aprender Java para Faculdade.");
-        System.out.para("(79) 99876-5432")
+        System.out.println("(79) 99876-5432");
     }
 }
