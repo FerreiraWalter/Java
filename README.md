@@ -7,7 +7,6 @@
 ## Arquivos
 
 * **Primeiros Passos:** [Clique aqui!](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos)
-
   1. Tipos de Variáveis: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/1-Tipos_de_Var)
   2. Declarando Variáveis: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/2-Declarando_Var)
   3. Dados de Entrada: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/3-Dados_de_Entrada)
