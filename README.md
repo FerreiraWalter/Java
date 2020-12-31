@@ -15,7 +15,8 @@
    * Estruturas de Repetição: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/7-Estrutura_de_Repetição/Do)
 
 ## Exercícios
-* **Geral:** [Clique aqui!](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/6-Exercicios)
-  * Maratonas(URI): [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/6-Exercicios/Maratona)
+* **Geral (mas nem tão geral assim):** [Clique aqui!](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/6-Exercicios)
+  * Maratonas (URI): [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/6-Exercicios/Maratona)
   * Estrutura de Repetição: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/7-Estrutura_de_Repetição/Do/Exercicios)
+  * Funções: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/8-Função/Exercicios)
 
