@@ -15,6 +15,7 @@ public class Lugar {
         this.nome = StringQualquer.toUpperCase();
 	}
 
+    //Encontrar no GOOGLE MAPS o Local digitado.
 	public void mostraLugarNoMapa() throws IOException, URISyntaxException {
 
         String nomeUrl = this.nome.replace(" ", "+");
@@ -38,7 +39,44 @@ public class Lugar {
 	}
 
 	public Integer totalDeAvaliacoes() {
+
 		return this.avaliacoes.size();
+	}
+
+	public Double avaliacaoMedia() {
+
+		return somaDasAvaliacoes()/totalDeAvaliacoes();
+	}
+
+    private Double somaDasAvaliacoes() {
+
+        Double soma = 0d;
+
+        for (Integer avaliacao : avaliacoes) {
+            
+            soma += avaliacao;
+        }
+        return soma;
+    }
+
+	public String avaliacaoStatus() {
+
+        Double media = avaliacaoMedia();
+
+        if (media > 4) {
+
+            return "Muito Boa";
+
+        } else if (media >= 3) {
+
+            return "Razoavel";
+
+        } else {
+
+            return "Ruim";
+
+        }
+
 	}
     
 }
