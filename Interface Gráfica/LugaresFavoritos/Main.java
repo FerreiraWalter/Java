@@ -16,6 +16,7 @@ public class Main {
 
         objetoLugar.addAvaliacao(5);
         objetoLugar.addAvaliacao(3);
+        objetoLugar.addAvaliacao(4);
 
         Integer Total = objetoLugar.totalDeAvaliacoes();
         System.out.println(Total);
