@@ -12,7 +12,7 @@ public class Main {
         String NomeLugar = input.nextLine();
 
         Lugar objetoLugar = new Lugar(NomeLugar);
-        //objetoLugar.mostraLugarNoMapa();
+        objetoLugar.mostraLugarNoMapa();
 
         objetoLugar.addAvaliacao(5);
         objetoLugar.addAvaliacao(3);
