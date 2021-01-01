@@ -21,8 +21,6 @@ public class Main {
         Integer Total = objetoLugar.totalDeAvaliacoes();
         System.out.println(Total);
         
-
-
     }
  
 }
