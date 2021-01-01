@@ -2,20 +2,43 @@ import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Lugar {
 
-    public String nome;
-    public Double avaliacao;
+    private String nome;
+    private List<Integer> avaliacoes = new ArrayList<Integer>();
 
-    public Lugar(String nome ) {
+    public Lugar(String StringQualquer ) {
 
-
+        this.nome = StringQualquer.toUpperCase();
 	}
 
 	public void mostraLugarNoMapa() throws IOException, URISyntaxException {
 
-        Desktop.getDesktop().browse(new URI("https://www.google.com/maps/place/Mercatto+Sorvetes/@-10.9384933,-37.0742432,15z/data=!4m8!1m2!2m1!1sMercatto+Sorvetes%2F!3m4!1s0x71ab3a7608c6c05:0xd890663a27a90a29!8m2!3d-10.9337289!4d-37.0625286"));
+        String nomeUrl = this.nome.replace(" ", "+");
+
+        Desktop.getDesktop().browse(new URI("https://www.google.com/maps/search/?api=1&entry=yt&query="+ nomeUrl));
+    }
+    
+    public String getNome() {
+
+        return nome;
+    }
+
+    public void setNome(String nome) {
+
+        this.nome = nome.toUpperCase();
+    }
+
+	public void addAvaliacao(int avaliacao) {
+
+        this.avaliacoes.add(avaliacao);
+	}
+
+	public Integer totalDeAvaliacoes() {
+		return this.avaliacoes.size();
 	}
     
 }
