@@ -77,6 +77,13 @@ public class Lugar {
 
         }
 
-	}
+    }
+    
+    @Override
+    public String toString() {
+
+        return "Nome: "+ nome + "\n" + "Total de Avaliações: " + totalDeAvaliacoes() + "\n" + "Média de avaliações: " + avaliacaoMedia() + "\n" + "Status: " + avaliacaoStatus();
+
+    }
     
 }
