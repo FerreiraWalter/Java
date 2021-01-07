@@ -1,10 +1,10 @@
 package Cod3r;
 
-public class Data {
+public class Data 
+{
     
     int dia;
     int mes;
     int ano;
 
-    
 }
