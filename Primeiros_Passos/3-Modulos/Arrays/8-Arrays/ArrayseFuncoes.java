@@ -11,6 +11,8 @@ public class ArrayseFuncoes {
 
         System.out.println(cont);
     }
+
+    
     public static void main(String args[]) {
 
         int[] idadeAlunos = new int[3];
