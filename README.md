@@ -7,11 +7,11 @@
 ## Arquivos
 
 * **Primeiros Passos:** [Clique aqui!](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos)
-   * Tipos de Variáveis: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/1-Tipos_de_Var)
+   * Tipos de Variáveis: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/1-Fundamentos)
    * Declarando Variáveis: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/2-Declarando_Var)
    * Dados de Entrada: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/3-Dados_de_Entrada)
    * Operadores: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/4-Operadores)
-   * Estruturas Condicionais: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/5-Estruturas_Condicionais)
+   * Estruturas Condicionais: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/2-Estruturas/5-Estruturas_Condicionais)
    * Estruturas de Repetição: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/Primeiros_Passos/7-Estrutura_de_Repetição/Do)
    * Programação Orientada a Objetos: [aqui.](https://github.com/FerreiraWalter/Java4Me/tree/main/POO)
 
