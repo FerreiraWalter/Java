@@ -17,19 +17,26 @@ public class Matriz
 
         double[][] notasDaTurma = new double[qtdAlunos][notasAlunos];
 
-        
+        double total = 0;
         for (int a = 0; a < notasDaTurma.length; a++) 
         {
 
             for (int n = 0; n < notasDaTurma[a].length; n++) 
             {
 
-                System.out.print("Informe a"+ (a + 1) +"ª nota do " + (n + 1) + "Aluno: " );
+                System.out.printf("Informe a %dª nota do %dº Aluno: ", n + 1, a + 1);
                 notasDaTurma[a][n] = input.nextDouble();
+
+                total += notasDaTurma[a][n];
 
             }
 
         }
+
+        double mediaGeral = total/(qtdAlunos * notasAlunos);
+        System.out.println("Média dos Alunos: " + mediaGeral);
+
+        
 
     }
 
