@@ -1,6 +1,6 @@
 # Java4Me☕
 
- Meu aprendizado sobre **JAVA** para Faculdade.
+ Meu aprendizado sobre **JAVA** para Faculdade. (README está **Desatualizado**)
  
 ![java](https://github.com/FerreiraWalter/Java4Me/blob/main/Primeiros_Passos/mascote.png)
 
