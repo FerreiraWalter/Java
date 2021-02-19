@@ -4,8 +4,8 @@ import javax.swing.JOptionPane;
 
 public class Gerente extends Funcionario {
 
-    public Gerente(String nome, String cpf, double salario) {
-        super(nome, cpf, salario);
+    public Gerente(String nome, String cpf) {
+        super(nome, cpf);
     }
     
     public double calculaSalario() {

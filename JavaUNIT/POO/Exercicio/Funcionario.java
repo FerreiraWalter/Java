@@ -6,12 +6,11 @@ public class Funcionario {
 
     private String nome;
     private String cpf;
-    private double salario;
+    private double salario = 600;
 
-    public Funcionario(String nome, String cpf, double salario) {
+    public Funcionario(String nome, String cpf) {
         this.setNome(nome);
         this.setCpf(cpf);
-        this.setSalario(salario);
     }
 
     public String getNome() {
@@ -35,7 +34,7 @@ public class Funcionario {
     }
 
     public void setSalario(double salario) {
-        this.salario = salario;
+        this.salario = 600;
     }
 
     public double calculaSalario() {
@@ -43,8 +42,8 @@ public class Funcionario {
     }
 
     public void exibirDados() {
-        JOptionPane.showMessageDialog(null, "NOME:" + this.getNome() 
-        + "\nCPF: " + this.getCpf()
-        + "\nSALÁRIO: " + this.calculaSalario());
+        JOptionPane.showMessageDialog(null, "Nome: " + this.getNome() 
+        + "\nCpf: " + this.getCpf()
+        + "\nSalário: " + this.calculaSalario());
     }
 }

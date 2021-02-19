@@ -4,8 +4,8 @@ import javax.swing.JOptionPane;
 
 public class Assistente extends Funcionario {
 
-    public Assistente(String nome, String cpf, double salario) {
-        super(nome, cpf, salario);
+    public Assistente(String nome, String cpf) {
+        super(nome, cpf);
     }
 
     public double calculaSalario() {
