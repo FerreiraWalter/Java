@@ -1,4 +1,6 @@
-public class Hello{
+package Primeiros_Passos;
+
+public class Hello {
 
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package POO;
+
 public class Pessoa {
     
     private String nome;
