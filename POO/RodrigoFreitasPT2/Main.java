@@ -2,10 +2,12 @@ package POO.RodrigoFreitasPT2;
 
 public class Main {
     public static void main(String[] args) {
-        ContaCorrente contaCorrente = new ContaCorrente(100);
-        ContaPoupanca contaPoupanca = new ContaPoupanca();
+        Conta c;
 
-        contaCorrente.view();
-        contaPoupanca.view();
+        c = new ContaCorrente();
+        c.saldo();
+
+        c = new ContaPoupanca();
+        c.saldo();
     }
 }

@@ -2,8 +2,8 @@ package POO.RodrigoFreitasPT2;
 
 public class ContaCorrente extends Conta {
 
-	public ContaCorrente(Integer valor) {
-        super(valor);
-	}
-    
+    @Override
+    public void saldo() {
+        System.out.println("Corrente: " + this.total + 100);
+    }
 }
