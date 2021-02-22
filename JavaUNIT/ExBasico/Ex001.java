@@ -1,4 +1,4 @@
-package JavaUNIT;
+package JavaUNIT.ExBasico;
 
 import java.util.Scanner;
 
