@@ -1,4 +1,4 @@
-package JavaUNIT.POO.Exercicio;
+package JavaUNIT.POO.Funcionario;
 
 import javax.swing.JOptionPane;
 

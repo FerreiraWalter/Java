@@ -1,12 +1,9 @@
 package JavaUNIT.POO.Imovel;
 
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
         String endereco;
         Double preco;
@@ -34,9 +31,6 @@ public class Main {
                 casa = new Velho(endereco, preco);
                 casa.imprimirDados();
             }
-
         }
-
-
     }
 }
