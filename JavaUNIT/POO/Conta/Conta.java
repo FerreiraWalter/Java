@@ -1,4 +1,4 @@
-package JavaUNIT.POO;
+package JavaUNIT.POO.Conta;
 
 public class Conta {
     
