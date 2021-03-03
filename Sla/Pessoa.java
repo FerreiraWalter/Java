@@ -43,16 +43,23 @@ public class Pessoa {
         this.salario = salario;
     }
 
-    //CADASTRO DE FUNCIONARIOS
+    //Cadastrar Clientes
+    public void cadastrarClientes() {
+        this.nome = JOptionPane.showInputDialog("Digite o NOME do Cliente:");
+        this.cpf = JOptionPane.showInputDialog("Digite o CPF do Cliente:");
+    }
+
+    //Cadastrar Funcionario
     public void cadastrarFuncionario() {
         this.nome = JOptionPane.showInputDialog("Digite o NOME do Funcionário:");
         this.cpf = JOptionPane.showInputDialog("Digite o CPF do Funcionário:");
         this.salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o SALÁRIO do Funcionário:"));
 	}
 
-    //EXIBIR (MUDANÇAS NO FUTURO)
-    public void exibirClientes(ArrayList<String> lista_clientes) {
-        JOptionPane.showMessageDialog(null, "Nome: Walter");
+    //Exibir (MUDANÇAS NO FUTURO)
+    public void exibirClientes() {
+        JOptionPane.showMessageDialog(null, "Nome: " + this.nome
+        + "\nCpf: " + this.cpf);
     }
 
     public void exibirFuncionarios() {
