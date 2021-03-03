@@ -36,7 +36,7 @@ public class Main {
                 //Cadastro (Cliente, Funcionario, Produto)
                 case 0:
                     // (Cliente, Funcionario, Produto)
-                    opc_cadastro = JOptionPane.showOptionDialog(null, "Escolha uma opção abaixo:","Sistema Panelinha", JOptionPane.DEFAULT_OPTION, JOptionPane.DEFAULT_OPTION, null, cadastro, cadastro[0]);
+                    opc_cadastro = JOptionPane.showOptionDialog(null, "Escolha uma opção abaixo:","Cadastrar Panelinha", JOptionPane.DEFAULT_OPTION, JOptionPane.DEFAULT_OPTION, null, cadastro, cadastro[0]);
 
                     switch (opc_cadastro) {
                         //Cadastrar Cliente 
@@ -50,7 +50,7 @@ public class Main {
 
                         //Cadastrar Funcionario (Gerente, Atendente, Vendedor)
                         case 1:
-                            opc_cargos = JOptionPane.showOptionDialog(null, "Escolha uma opção abaixo:","Sistema Panelinha", JOptionPane.DEFAULT_OPTION, JOptionPane.DEFAULT_OPTION, null, cargos, cargos[0]);
+                            opc_cargos = JOptionPane.showOptionDialog(null, "Escolha uma opção abaixo:","Panelinha Funcionarios", JOptionPane.DEFAULT_OPTION, JOptionPane.DEFAULT_OPTION, null, cargos, cargos[0]);
 
                             switch (opc_cargos) {
                                 case 0:
@@ -80,7 +80,7 @@ public class Main {
                                 default:
                                     break;
                             }   
-                        break;
+                            break;
 
                         //Cadastrar Produto
                         case 2:
@@ -94,40 +94,61 @@ public class Main {
                         default:
                             break;
                     }
-                    break;
+                        break;
+
                 //Exibir (Cliente, Funcionario, Produto)
                 case 1:
                     opc_exibir = JOptionPane.showOptionDialog(null, "O que deseja Exibir:","Exibir Panelinha", JOptionPane.DEFAULT_OPTION, JOptionPane.DEFAULT_OPTION, null, cadastro, cadastro[0]);
 
                     switch (opc_exibir) {
                         case 0:
-                            for(Cliente cliente : lista_cliente) {
-                                cliente.exibirCliente();
+                            //Verificar se algum Cliente foi cadastrado
+                            if(lista_cliente.size() == 0) {
+                                JOptionPane.showMessageDialog(null, "Nenhum Cliente Cadastrado!");
+                            } else {
+                                for(Cliente cliente : lista_cliente) {
+                                    cliente.exibirCliente();
+                                }
                             }
+
                             break;
                         
                         //Exibir Funcionários (Gerente, Atentende, Vendedor)
                         case 1:
-                            //Exibindo Gerente
-                            for(Gerente gerente : lista_gerente) {
-                                gerente.exibirGerente();
+                            //Verificar se algum Funcionário foi cadastrado
+                            if(lista_gerente.size() == 0 && lista_atendente.size() == 0 && lista_vendedor.size() == 0) {
+                                JOptionPane.showMessageDialog(null, "Nenhum Funcionário Cadastrado!");
+                            } else {
+                                //Exibindo Gerente
+                                for(Gerente gerente : lista_gerente) {
+                                    gerente.exibirGerente();
+                                }
+
+                                //Exibindo Atendente
+                                for(Atendente atendente : lista_atendente) {
+                                    atendente.exibirAtendente();
+                                }
+
+                                //Exibindo Vendedor
+                                for(Vendedor vendedor : lista_vendedor) {
+                                    vendedor.exibirVendedor();
+                                }
                             }
 
-                            //Exibindo Atendente
-                            for(Atendente atendente : lista_atendente) {
-                                atendente.exibirAtendente();
-                            }
-
-                            //Exibindo Vendedor
-                            for(Vendedor vendedor : lista_vendedor) {
-                                vendedor.exibirVendedor();
-                            }
+                            break;
                         
                         //Exibir Produtos (Junto com Categoria e Família)
                         case 2:
-                            for(Produto produto : lista_produto) {
-                                produto.exibirProduto();
+                            //Verificar se algum Produto foi cadastrado
+                            if(lista_produto.size() == 0) {
+                                JOptionPane.showMessageDialog(null, "Nenhum Produto Cadastrado!");
+                            } else {
+                                for(Produto produto : lista_produto) {
+                                    produto.exibirProduto();
+                                }
                             }
+
+                            break;
 
                         default:
                             break;
