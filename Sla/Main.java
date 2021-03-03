@@ -9,6 +9,7 @@ import Sla.Funcionarios.Gerente;
 import Sla.Clientes.Cliente;
 import Sla.Funcionarios.Atendente;
 import Sla.Funcionarios.Vendedor;
+import Sla.Produtos.Produto;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +23,7 @@ public class Main {
         List<Gerente> lista_gerente = new ArrayList<>();
         List<Atendente> lista_atendente = new ArrayList<>();
         List<Vendedor> lista_vendedor = new ArrayList<>();
+        List<Produto> lista_produto = new ArrayList<>();
 
         //Variáveis
         int opc, opc_cadastro, opc_exibir, opc_cargos;
@@ -77,7 +79,17 @@ public class Main {
                             
                                 default:
                                     break;
-                            }    
+                            }   
+                        break;
+
+                        //Cadastrar Produto
+                        case 2:
+                            //Cadastro do Produto (Junto com Categoria e Família)
+                            Produto produto = new Produto();
+                            produto.cadastrarProduto();
+                            lista_produto.add(produto);
+
+                            break;
 
                         default:
                             break;
@@ -110,11 +122,16 @@ public class Main {
                             for(Vendedor vendedor : lista_vendedor) {
                                 vendedor.exibirVendedor();
                             }
+                        
+                        //Exibir Produtos (Junto com Categoria e Família)
+                        case 2:
+                            for(Produto produto : lista_produto) {
+                                produto.exibirProduto();
+                            }
 
                         default:
                             break;
-                    }
-            
+                    }            
             }
         }
     }
